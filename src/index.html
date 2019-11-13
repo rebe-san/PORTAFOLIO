@@ -33,11 +33,11 @@
 
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top animated slideInDown ">
+    <nav class="navbar navbar-expand-lg fixed-top animated slideInDown">
         <a class="navbar-brand" href="#home">Logo</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
             aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span id="icon-menu" class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbar">
             <div class="navbar-nav ml-auto">
@@ -49,6 +49,7 @@
         </div>
     </nav>
     <main class="main">
+        <!-- https://rebe-san.github.io/PORTAFOLIO/.  -->
         <!-- section home -->
         <section id="home" class="container">
             <div class="row h-100">
@@ -112,101 +113,103 @@
         <!-- skills section -->
         <section id="skills" class="container">
             <div class="row h-100">
-                <div class="col-md-6 d-flex flex-column align-items-center justify-content-center" data-aos="fade-down" data-aos-easing="linear">
+                <div class="col-md-6 d-flex flex-column align-items-center justify-content-center" data-aos="fade-down"
+                    data-aos-easing="linear">
                     <h2 class="title-skills">Habilidades Técnicas</h2>
-                    <div class=" hard-skills d-flex flex-wrap">
-                        <div class="d-flex justify-content-center align-items-center">
-                            <div class="hard-skill-div d-flex justify-content align-items-center flex-column">
-                                <!-- <i class="fab fa-x|js i-1 i-sk"></i> -->
-                                <img class="i-sk" src="../imagenes/icons8-javascript(1).svg" alt="">
-                                <p>Javascript</p>
+                    <!-- <div class=" hard-skills d-flex flex-wrap"> -->
+                    <div class="d-flex flex-wrap justify-content-center align-items-center">
+                        <div class="hard-skill-div d-flex justify-content align-items-center flex-column">
+                            <!-- <i class="fab fa-x|js i-1 i-sk"></i> -->
+                            <img class="i-sk" src="../imagenes/icons8-javascript(1).svg" alt="">
+                            <p>Javascript</p>
 
-                            </div>
-                            <div class="hard-skill-div d-flex justify-content-center align-items-center flex-column">
-                                <!-- <i class="fas fa-code i-2 i-sk"></i> -->
-                                <img class="i-sk" src="../imagenes/icons8-html-5(1).svg" alt="">
-                                <p>HTML</p>
-                            </div>
-
-                            <div class=" hard-skill-div d-flex justify-content-center align-items-center flex-column">
-                                <!-- <i class="fab fa-css3-alt i-3 i-sk"></i> -->
-                                <img class="i-sk" src="../imagenes/icons8-css3(1).svg" alt="">
-                                <p>CCS</p>
-                            </div>
-
-                            <div class=" hard-skill-div d-flex justify-content-center align-items-center flex-column">
-                                <!-- <i class='uil uil-github i-4 i-sk'></i> -->
-                                <img class="i-sk" src="../imagenes/github-1.svg" alt="">
-                                <p>Github</p>
-                            </div>
-
-                            <div class="hard-skill-div d-flex justify-content-center align-items-center flex-column">
-                                <!-- <i class="fab fa-angular i-5 i-sk"></i> -->
-                                <img class="i-sk" src="../imagenes/angular-icon.svg" alt="">
-                                <p>Angular</p>
-                            </div>
-                            <div class="hard-skill-div d-flex justify-content-center align-items-center flex-column">
-                                <!-- <i class="fab fa-bootstrap i-6 i-sk"></i> -->
-                                <img class="i-sk" src="../imagenes/icons8-oreja.svg" alt="">
-                                <p>Bootstrap</p>
-                            </div>
                         </div>
-                        <div class="d-flex justify-content-center align-items-center text-center ">
-                            <div class="hard-skill-div d-flex justify-content-center align-items-center flex-column">
-                                <!-- <i class="fab fa-git-alt i-7 i-sk"></i> -->
-                                <img class="i-sk" src="../imagenes/icons8-git(1).svg" alt="">
-                                <p>Git</p>
-                            </div>
+                        <div class="hard-skill-div d-flex justify-content-center align-items-center flex-column">
+                            <!-- <i class="fas fa-code i-2 i-sk"></i> -->
+                            <img class="i-sk" src="../imagenes/icons8-html-5(1).svg" alt="">
+                            <p>HTML</p>
+                        </div>
 
-                            <div class="hard-skill-div d-flex justify-content-center align-items-center flex-column">
-                                <!-- <i class="fab fa-ubuntu i-8 i-sk"></i> -->
-                                <img class="i-sk" src="../imagenes/icons8-ubuntu-48.png" alt="">
-                                <p>Ubuntu</p>
-                            </div>
+                        <div class=" hard-skill-div d-flex justify-content-center align-items-center flex-column">
+                            <!-- <i class="fab fa-css3-alt i-3 i-sk"></i> -->
+                            <img class="i-sk" src="../imagenes/icons8-css3(1).svg" alt="">
+                            <p>CCS</p>
+                        </div>
 
-                            <div class=" hard-skill-div d-flex justify-content-center align-items-center flex-column">
-                                <!-- <i class="fab fa-figma i-9 i-sk"></i> -->
-                                <img class="i-sk" src="../imagenes/figma-1.svg" alt="">
-                                <p>Figma</p>
-                            </div>
+                        <div class=" hard-skill-div d-flex justify-content-center align-items-center flex-column">
+                            <!-- <i class='uil uil-github i-4 i-sk'></i> -->
+                            <img class="i-sk" src="../imagenes/github-1.svg" alt="">
+                            <p>Github</p>
+                        </div>
 
-                            <div class=" hard-skill-div d-flex justify-content-center align-items-center flex-column">
-                                <!-- <i class="fab fa-node i-10 i-sk"></i> -->
-                                <img class="i-sk" src="../imagenes/nodejs-1.svg" alt="">
-                                <p>Node</p>
-                            </div>
-
-                            <div class="hard-skill-div d-flex  justify-content-center align-items-center flex-column">
-                                <!-- <i class="fab fa-npm i-11 i-sk"></i> -->
-                                <img class="i-sk" src="../imagenes/icons8-ngp.svg" alt="">
-                                <p>npm</p>
-                            </div>
-                            <div class="hard-skill-div d-flex  justify-content-center align-items-center flex-column">
-                                <img class="i-sk" src="../imagenes/firebase-2.svg" id="logo-fire" alt="">
-                                <p>Firebase</p>
-                            </div>
+                        <div class="hard-skill-div d-flex justify-content-center align-items-center flex-column">
+                            <!-- <i class="fab fa-angular i-5 i-sk"></i> -->
+                            <img class="i-sk" src="../imagenes/angular-icon.svg" alt="">
+                            <p>Angular</p>
+                        </div>
+                        <div class="hard-skill-div d-flex justify-content-center align-items-center flex-column">
+                            <!-- <i class="fab fa-bootstrap i-6 i-sk"></i> -->
+                            <img class="i-sk" src="../imagenes/icons8-oreja.svg" alt="">
+                            <p>Bootstrap</p>
                         </div>
                     </div>
+                    <div class="d-flex flex-wrap justify-content-center align-items-center text-center ">
+                        <div class="hard-skill-div d-flex justify-content-center align-items-center flex-column">
+                            <!-- <i class="fab fa-git-alt i-7 i-sk"></i> -->
+                            <img class="i-sk" src="../imagenes/icons8-git(1).svg" alt="">
+                            <p>Git</p>
+                        </div>
+
+                        <div class="hard-skill-div d-flex justify-content-center align-items-center flex-column">
+                            <!-- <i class="fab fa-ubuntu i-8 i-sk"></i> -->
+                            <img class="i-sk" src="../imagenes/icons8-ubuntu-48.png" alt="">
+                            <p>Ubuntu</p>
+                        </div>
+
+                        <div class=" hard-skill-div d-flex justify-content-center align-items-center flex-column">
+                            <!-- <i class="fab fa-figma i-9 i-sk"></i> -->
+                            <img class="i-sk" src="../imagenes/figma-1.svg" alt="">
+                            <p>Figma</p>
+                        </div>
+
+                        <div class=" hard-skill-div d-flex justify-content-center align-items-center flex-column">
+                            <!-- <i class="fab fa-node i-10 i-sk"></i> -->
+                            <img class="i-sk" src="../imagenes/nodejs-1.svg" alt="">
+                            <p>Node</p>
+                        </div>
+
+                        <div class="hard-skill-div d-flex  justify-content-center align-items-center flex-column">
+                            <!-- <i class="fab fa-npm i-11 i-sk"></i> -->
+                            <img class="i-sk" src="../imagenes/icons8-ngp.svg" alt="">
+                            <p>npm</p>
+                        </div>
+                        <div class="hard-skill-div d-flex  justify-content-center align-items-center flex-column">
+                            <img class="i-sk" src="../imagenes/firebase-2.svg" alt="">
+                            <p>Firebase</p>
+                        </div>
+                    </div>
+                    <!-- </div> -->
                 </div>
                 <div class="col-md-6 d-flex flex-column flex-wrap align-items-center justify-content-center">
                     <h2 class="title-skills text-center">Habilidades blandas</h2>
-                    <div class="soft-skills w-100 d-flex justify-content-center align-items-center text-center">
-                        <ul>
-                            <li>Planificación</li>
-                            <li>Organización</li>
-                            <li>Metodologías ágiles</li>
-                            <li>Autodidacta</li>
-                            <li>Resilencia</li>
-                        </ul>
-                    </div>
+                    <!-- <div class="soft-skills w-100 d-flex justify-content-center align-items-center text-center"> -->
+                    <ul>
+                        <li>Planificación</li>
+                        <li>Organización</li>
+                        <li>Metodologías ágiles</li>
+                        <li>Autodidacta</li>
+                        <li>Resilencia</li>
+                    </ul>
+                    <!-- </div> -->
                 </div>
             </div>
-        
+
         </section>
         <!-- project section -->
         <section id="projects" class="d-flex align-items-center flex-column">
-            <div class="d-flex flex-row">
-                <div class="d-flex flex-column mr-5">
+            <h2 class="title-section">PROYECTOS</h2>
+            <!-- <div class="d-flex flex-row"> -->
+            <!-- <div class="d-flex flex-column mr-5">
                     <h2 class="title-section">P</h2>
                     <h2 class="title-section">R</h2>
                     <h2 class="title-section">O</h2>
@@ -216,95 +219,95 @@
                     <h2 class="title-section">T</h2>
                     <h2 class="title-section">O</h2>
                     <h2 class="title-section">S</h2>
+                </div> -->
+            <div>
+                <!-- <div id="project-card-1" class="card"> -->
+
+                <!-- <div class="transparent-card"> -->
+                <div class="container card">
+                    <div class="row h-100">
+                        <div class="col-md-6" id="project-card-1">
+                            <div class="transparent-card h-100 w-100">
+                                <div class="d-flex justify-content-between">
+                                    <h2 class="name-project">Data-Lovers</h2>
+                                    <h2 class="number-project">01</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 p-4 d-flex flex-column justify-content-center align-items-center">
+                            <p class="description-project">
+                                Desarrollo de una web app que consume información de una API y la muestra en la
+                                página ,
+                                además de
+                                realizar funciones que manipulaban la información para mostrar los datos pedidos por
+                                el
+                                usuario.
+                            </p>
+                            <div class="d-flex justify-content-between w-100 pt-3">
+                                <a href="https://github.com/rebe-san/MEX-Data-Lovers-008" target="blank">CODIGO</a>
+                                <a href="https://rebe-san.github.io/MEX-Data-Lovers-008/src/index.html"
+                                    target="blank">PROYECTO</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <!-- <div id="project-card-1" class="card"> -->
 
-                    <!-- <div class="transparent-card"> -->
-                    <div class="container card">
-                        <div class="row h-100">
-                            <div class="col-md-6" id="project-card-1">
-                                <div class="transparent-card h-100 w-100">
-                                    <div class="d-flex justify-content-between">
-                                        <h2 class="name-project">Data-Lovers</h2>
-                                        <h2 class="number-project">01</h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 p-4 d-flex flex-column justify-content-center align-items-center">
-                                <p class="description-project">
-                                    Desarrollo de una web app que consume información de una API y la muestra en la
-                                    página ,
-                                    además de
-                                    realizar funciones que manipulaban la información para mostrar los datos pedidos por
-                                    el
-                                    usuario.
-                                </p>
-                                <div class="d-flex justify-content-between w-100 pt-3">
-                                    <a href="https://github.com/rebe-san/MEX-Data-Lovers-008" target="blank">CODIGO</a>
-                                    <a href="https://rebe-san.github.io/MEX-Data-Lovers-008/src/index.html"
-                                        target="blank">PROYECTO</a>
+                <div class="container card">
+                    <div class="row h-100">
+                        <div class="col-md-6" id="project-card-2">
+                            <div class="transparent-card h-100 w-100">
+                                <div class="d-flex justify-content-between">
+                                    <h2 class="name-project">MD-Links</h2>
+                                    <h2 class="number-project">02</h2>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="container card">
-                        <div class="row h-100">
-                            <div class="col-md-6" id="project-card-2">
-                                <div class="transparent-card h-100 w-100">
-                                    <div class="d-flex justify-content-between">
-                                        <h2 class="name-project">MD-Links</h2>
-                                        <h2 class="number-project">02</h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 p-4 d-flex flex-column justify-content-center align-items-center">
-                                <p class="description-project">
-                                    Modulo con NodeJS instalable vía npm.<br>
-                                    El modulo lee y analiza archivos en formato Markdown, para verificar los links que
-                                    contiene y
-                                    reportarlos.
-                                </p>
-                                <div class="d-flex justify-content-between w-100 pt-3">
-                                    <a href="https://github.com/rebe-san/MEX008-FE-md-link" target="blank">CODIGO</a>
-                                </div>
+                        <div class="col-md-6 p-4 d-flex flex-column justify-content-center align-items-center">
+                            <p class="description-project">
+                                Modulo con NodeJS instalable vía npm.<br>
+                                El modulo lee y analiza archivos en formato Markdown, para verificar los links que
+                                contiene y
+                                reportarlos.
+                            </p>
+                            <div class="d-flex justify-content-between w-100 pt-3">
+                                <a href="https://github.com/rebe-san/MEX008-FE-md-link" target="blank">CODIGO</a>
                             </div>
                         </div>
                     </div>
-                    <!-- </div> -->
-                    <!-- </div> -->
-
-                    <div class="container card">
-                        <div class="row h-100">
-                            <div class="col-md-6" id="project-card-3">
-                                <div class="transparent-card h-100 w-100">
-                                    <div class="d-flex justify-content-between">
-                                        <h2 class="name-project">MERN-Stack</h2>
-                                        <h2 class="number-project">03</h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 p-4 d-flex flex-column justify-content-center align-items-center">
-                                <p class="description-project">
-                                    Desarrollo de una Red Social con Firebase como tecnología para el Back End.<br>
-                                    Permite loguearse a través de facebook , gmail y correo electrónico, agregar ,
-                                    editar y
-                                    borrar
-                                    publicaciones así como también agregar, editar y borrar comentarios.
-                                </p>
-                                <div class="d-flex justify-content-between w-100 pt-3">
-                                    <a href="https://github.com/rebe-san/MERN-Stack-Books" target="blank">CODIGO</a>
-                                    <a href="https://github.com/rebe-san" target="blank">PROYECTO</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
                 </div>
+                <!-- </div> -->
+                <!-- </div> -->
+
+                <div class="container card">
+                    <div class="row h-100">
+                        <div class="col-md-6" id="project-card-3">
+                            <div class="transparent-card h-100 w-100">
+                                <div class="d-flex justify-content-between">
+                                    <h2 class="name-project">MERN-Stack</h2>
+                                    <h2 class="number-project">03</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 p-4 d-flex flex-column justify-content-center align-items-center">
+                            <p class="description-project">
+                                Desarrollo de una Red Social con Firebase como tecnología para el Back End.<br>
+                                Permite loguearse a través de facebook , gmail y correo electrónico, agregar ,
+                                editar y
+                                borrar
+                                publicaciones así como también agregar, editar y borrar comentarios.
+                            </p>
+                            <div class="d-flex justify-content-between w-100 pt-3">
+                                <a href="https://github.com/rebe-san/MERN-Stack-Books" target="blank">CODIGO</a>
+                                <a href="https://github.com/rebe-san" target="blank">PROYECTO</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- </div> -->
             </div>
         </section>
 
@@ -316,14 +319,24 @@
             <li>
                 <a href="https://www.linkedin.com/in/rebeca-c-santiago/" target="_blank"><i
                         class="fab fa-linkedin-in icon"></i></a>
+                <p>/in/rebeca-c-santiago</p>
             </li>
             <li>
                 <a href="https://github.com/rebe-san" target="_blank"><i class="fab fa-github icon"></i></a>
+                <p>/rebe-san</p>
             </li>
-            <div class="d-flex justify-content-center align-items-center flex-column">
-                <p>correo: chi.san.rebeca@gmail.com</p>
-                <p href="#">celular: 971-718-76-47</p>
-            </div>
+            <li>
+                    <i class="fas fa-envelope"></i>
+                <p>chi.san.rebeca@gmail.com</p>
+            </li>
+            <li>
+                <i class="fas fa-phone"></i>
+                <p>971-718-76-47</p>
+            </li>
+            <!-- <div class="d-flex justify-content-center align-items-center flex-column"> -->
+
+
+            <!-- </div> -->
     </footer>
 
     <!-- scripts bootstrap -->

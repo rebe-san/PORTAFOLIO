@@ -24,11 +24,11 @@
 
 /* navbar */
 .navbar{
-  background:#262626; 
+  background:#262626;
+  /* background: white;  */
 }
 
-/* items navbar
- */
+/* items navbar*/
 .nav-item{
   /* color:#f4f4f4; */
   /* color:#FFFAED; */
@@ -37,25 +37,27 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
 }
+
+
+#icon-menu{
+  color:#fa7268;
+}
 /*titulo de las secciones*/
 .title-section{
-  /* font-family: 'Ubuntu', sans-serif; */
+  font-family: 'Ubuntu', sans-serif;
     /* font-family: 'Raleway', sans-serif; */
-    font-family: 'Staatliches', cursive;
+    /* font-family: 'Staatliches', cursive; */
     color:#FFFAED;
-
     /* color:#8155FF; */
     /* color:#a239ca; */
-  font-size:10vh;
+  font-size:70px;
   /* color:#dcd0c0; */
   /* color:#F3F3EB; */
   /* color:#fa7268; */
   /* margin-top: 50px; */
   font-weight: bold;
 }
-.title-section:nth-child(1){
-  margin-top:50px;
-}
+
 /* sections */
 #home{
   height: 100vh;
@@ -217,7 +219,7 @@
 
 }
 .transparent-card{
-  background:rgba(250,114,104,0.8);
+  background:rgba(250,114,104,0.7);
   /* background-size: 100% 100%; */
   
   /* border-radius:10px 0 0 10px; */
@@ -282,20 +284,20 @@
 
 
 }
-.soft-skills li{
-  margin:70px auto;
+/* .soft-skills li{ */
+  /* margin:70px auto; */
   /* color:#F3F3EB; */
-  color: #eeebd0;
+  /* color: #eeebd0;
   font-weight: bold;
   font-family: 'Raleway', sans-serif; 
-  font-size:20px; 
+  font-size:20px;  */
   /* font-family: 'Montserrat', sans-serif; */
   /* font-family: 'Lato', sans-serif; */
   /* font-family: 'Ubuntu', sans-serif; */
   
-}
+/* } */
 
-.hard-skills p{
+#skills p{
   color: #eeebd0;
   font-weight: bold;
   font-family: 'Raleway', sans-serif;
@@ -303,6 +305,12 @@
   /* font-family: 'Montserrat', sans-serif; */
   /* font-family: 'Lato', sans-serif; */
   /* font-family: 'Ubuntu', sans-serif; */
+}
+#skills ul li{
+  color: #eeebd0;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  font-size:20px; 
 }
 
 .hard-skill-div{
@@ -922,21 +930,22 @@ ul li:nth-child(4) a:before {
   .title-skills{
     font-size:20px;
   }
-  .soft-skills li{
-    /* color:#F3F3EB; */
-    margin:40px auto;
+  #skills p{
+    color: #eeebd0;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
     font-size:15px; 
     /* font-family: 'Montserrat', sans-serif; */
     /* font-family: 'Lato', sans-serif; */
     /* font-family: 'Ubuntu', sans-serif; */
-    
   }
-  .hard-skills p{
-    font-size:15px;
-    /* font-family: 'Montserrat', sans-serif; */
-    /* font-family: 'Lato', sans-serif; */
-    /* font-family: 'Ubuntu', sans-serif; */
+  #skills ul li{
+    color: #eeebd0;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    font-size:15px; 
   }
+  
 #contact ul li a {
   width: 40px;
   height: 40px;
@@ -945,5 +954,18 @@ ul li:nth-child(4) a:before {
 .i-sk{
   width: 30px;
   height:30px;
+}
+.title-section{
+  font-size:30px;
+}
+.name-project{
+ font-size: 25px;
+}
+.number-project{
+  font-size: 25px;
+
+}
+.description-project{
+  font-size:15px; 
 }
  }
