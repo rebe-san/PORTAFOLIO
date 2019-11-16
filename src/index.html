@@ -35,17 +35,9 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg fixed-top animated slideInDown">
         <a class="navbar-brand" href="#home">Logo</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span id="icon-menu" class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbar">
-            <div class="navbar-nav ml-auto">
                 <a class="nav-item nav-link" href="#about-skills">Acerca de mi</a>
                 <a class="nav-item nav-link" href="#projects">Proyectos</a>
                 <a class="nav-item nav-link" href="#contact">Contacto</a>
-            </div>
-        </div>
     </nav>
     <!-- main -->
     <main class="main">
@@ -64,10 +56,11 @@
                 </div>
             </div>
         </section>
-        <!-- skills section -->
+        <!--about-skills section -->
         <section id="about-skills" class="container">
-            <div class="row h-100">
-                <div id="about-section" class="col-md-6 d-flex flex-column align-items-center justify-content-center"
+            <div class="row">
+                <div id="about-section"
+                    class="col-sm-6 d-flex flex-column align-items-center justify-content-center"
                     data-aos="fade-down" data-aos-easing="linear">
                     <h2 class="title-about">ACERCA</h2>
                     <h2 class="title-about">DE MI</h2>
@@ -78,10 +71,11 @@
                         in.
                     </p>
                 </div>
-                <div id="skills-section" class="col-md-6 d-flex flex-column align-items-center justify-content-center">
+                <div id="skills-section"
+                    class="col-sm-6 d-flex flex-column align-items-center justify-content-center">
                     <h2 class="title-skills">Habilidades Técnicas</h2>
                     <div class="hard-skills d-flex flex-wrap justify-content-center align-items-center">
-                    <!-- <div class="d-flex flex-wrap justify-content-center align-items-center"> -->
+                        <!-- <div class="d-flex flex-wrap justify-content-center align-items-center"> -->
                         <div class="hard-skill-icon d-flex justify-content align-items-center flex-column">
                             <!-- <i class="fab fa-x|js i-1 i-sk"></i> -->
                             <img class="i-sk" src="../imagenes/icons8-javascript(1).svg" alt="">
@@ -112,8 +106,8 @@
                             <img class="i-sk" src="../imagenes/icons8-oreja.svg" alt="">
                             <p>Bootstrap</p>
                         </div>
-                    <!-- </div> -->
-                    <!-- <div class="d-flex flex-wrap justify-content-center align-items-center"> -->
+                        <!-- </div> -->
+                        <!-- <div class="d-flex flex-wrap justify-content-center align-items-center"> -->
                         <div class="hard-skill-icon d-flex justify-content-center align-items-center flex-column">
                             <!-- <i class="fab fa-git-alt i-7 i-sk"></i> -->
                             <img class="i-sk" src="../imagenes/icons8-git(1).svg" alt="">
@@ -159,87 +153,84 @@
             </div>
         </section>
         <!-- project section -->
-        <section id="projects" class="d-flex align-items-center flex-column">
+        <section id="projects" class="container d-flex align-items-center flex-column">
             <h2 class="title-projects">PROYECTOS</h2>
-            <div>
-
-                <div class="container card">
-                    <div class="row h-100">
-                        <div class="col-md-5" id="project-card-1">
-                            <div class="transparent-card h-100 w-100">
-                                <div class="d-flex justify-content-between">
-                                    <h2 class="name-project">Data-Lovers</h2>
-                                    <h2 class="number-project">01</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="description-card col-md-7 p-4 d-flex flex-column justify-content-center align-items-center">
-                            <p class="description-project">
-                                Desarrollo de una web app que consume información de una API y la muestra en la
-                                página ,
-                                además de
-                                realizar funciones que manipulaban la información para mostrar los datos pedidos por
-                                el
-                                usuario.
-                            </p>
-                            <div class="d-flex justify-content-between w-100 pt-3">
-                                <a href="https://github.com/rebe-san/MEX-Data-Lovers-008" target="blank">CODIGO</a>
-                                <a href="https://rebe-san.github.io/MEX-Data-Lovers-008/src/index.html"
-                                    target="blank">PROYECTO</a>
+            <div class="container card-project">
+                <div class="row">
+                    <div class="col-md-5" id="project-card-1">
+                        <div class="transparent-card h-100 w-100">
+                            <div class="d-flex justify-content-between">
+                                <h2 class="name-project">Data-Lovers</h2>
+                                <h2 class="number-project">01</h2>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="container card">
-                    <div class="row h-100">
-                        <div class="col-md-8" id="project-card-2">
-                            <div class="transparent-card h-100 w-100">
-                                <div class="d-flex justify-content-between">
-                                    <h2 class="name-project">MD-Links</h2>
-                                    <h2 class="number-project">02</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="description-card col-md-4 p-4 d-flex flex-column justify-content-center align-items-center">
-                            <p class="description-project">
-                                Modulo con NodeJS instalable vía npm.<br>
-                                El modulo lee y analiza archivos en formato Markdown, para verificar los links que
-                                contiene y
-                                reportarlos.
-                            </p>
-                            <div class="d-flex justify-content-between w-100 pt-3">
-                                <a href="https://github.com/rebe-san/MEX008-FE-md-link" target="blank">CODIGO</a>
-                            </div>
+                    <div
+                        class="description-card col-md-7 p-4 d-flex flex-column justify-content-center align-items-center">
+                        <p class="description-project">
+                            Desarrollo de una web app que consume información de una API y la muestra en la
+                            página ,
+                            además de
+                            realizar funciones que manipulaban la información para mostrar los datos pedidos por
+                            el
+                            usuario.
+                        </p>
+                        <div class="d-flex justify-content-between w-100 pt-3">
+                            <a href="https://github.com/rebe-san/MEX-Data-Lovers-008" target="blank">CODIGO</a>
+                            <a href="https://rebe-san.github.io/MEX-Data-Lovers-008/src/index.html"
+                                target="blank">PROYECTO</a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="container card">
-                    <div class="row h-100">
-                        <div class="col-md-7" id="project-card-3">
-                            <div class="transparent-card h-100 w-100">
-                                <div class="d-flex justify-content-between">
-                                    <h2 class="name-project">MERN-Stack</h2>
-                                    <h2 class="number-project">03</h2>
-                                </div>
+            <div class="container card-project">
+                <div class="row">
+                    <div class="col-md-8" id="project-card-2">
+                        <div class="transparent-card h-100 w-100">
+                            <div class="d-flex justify-content-between">
+                                <h2 class="name-project">MD-Links</h2>
+                                <h2 class="number-project">02</h2>
                             </div>
                         </div>
-                        <div
-                            class="description-card  col-md-5 p-4 d-flex flex-column justify-content-center align-items-center">
-                            <p class="description-project">
-                                Desarrollo de una Red Social con Firebase como tecnología para el Back End.<br>
-                                Permite loguearse a través de facebook , gmail y correo electrónico, agregar ,
-                                editar y
-                                borrar
-                                publicaciones así como también agregar, editar y borrar comentarios.
-                            </p>
-                            <div class="d-flex justify-content-between w-100 pt-3">
-                                <a href="https://github.com/rebe-san/MERN-Stack-Books" target="blank">CODIGO</a>
-                                <a href="https://github.com/rebe-san" target="blank">PROYECTO</a>
+                    </div>
+                    <div
+                        class="description-card col-md-4 p-4 d-flex flex-column justify-content-center align-items-center">
+                        <p class="description-project">
+                            Modulo con NodeJS instalable vía npm.<br>
+                            El modulo lee y analiza archivos en formato Markdown, para verificar los links que
+                            contiene y
+                            reportarlos.
+                        </p>
+                        <div class="d-flex justify-content-between w-100 pt-3">
+                            <a href="https://github.com/rebe-san/MEX008-FE-md-link" target="blank">CODIGO</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container card-project">
+                <div class="row">
+                    <div class="col-md-7" id="project-card-3">
+                        <div class="transparent-card h-100 w-100">
+                            <div class="d-flex justify-content-between">
+                                <h2 class="name-project">MERN-Stack</h2>
+                                <h2 class="number-project">03</h2>
                             </div>
+                        </div>
+                    </div>
+                    <div
+                        class="description-card  col-md-5 p-4 d-flex flex-column justify-content-center align-items-center">
+                        <p class="description-project">
+                            Desarrollo de una Red Social con Firebase como tecnología para el Back End.<br>
+                            Permite loguearse a través de facebook , gmail y correo electrónico, agregar ,
+                            editar y
+                            borrar
+                            publicaciones así como también agregar, editar y borrar comentarios.
+                        </p>
+                        <div class="d-flex justify-content-between w-100 pt-3">
+                            <a href="https://github.com/rebe-san/MERN-Stack-Books" target="blank">CODIGO</a>
+                            <a href="https://github.com/rebe-san" target="blank">PROYECTO</a>
                         </div>
                     </div>
                 </div>
