@@ -8,15 +8,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
   });
   
-//Scroll nav hide
-let prevScrollpos  = window.scrollY;
-window.addEventListener('scroll', ()=> {
-  let currentScrollPos = window.scrollY;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("nav").style.top = "0";
-  } else {
-    document.getElementById("nav").style.top = "-60px";
-  }
-  prevScrollpos = currentScrollPos;
-});
-

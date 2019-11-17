@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- unicons -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.0.1/css/unicons.css">
+    <link rel="stylesheet" href="../node_modules/aos/dist/aos.css" />
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css"
         integrity="sha384-wxqG4glGB3nlqX0bi23nmgwCSjWIW13BdLUEYC4VIMehfbcro/ATkyDsF/AbIOVe" crossorigin="anonymous">
@@ -15,8 +14,6 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- estilos -->
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <!-- wow js -->
-    <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
     <!-- fonts -->
     <link
         href="https://fonts.googleapis.com/css?family=Arvo|Catamaran:700|Montserrat:600|PT+Sans|Raleway:300|Staatliches|Ubuntu&display=swap"
@@ -31,15 +28,15 @@
     <title>Rebeca Chiñas</title>
 </head>
 
-<body>
+<body  data-spy="scroll" data-target="nav" >
     <!-- navbar -->
-    <nav id="nav" class="navbar fixed-top animated slideInDown">
-                <a class="nav-item nav-link" href="#home">Logo</a>
-                <div class="d-flex justify-content-end">
-                <a class="nav-item nav-link" href="#about-skills">Acerca de mi</a>
-                <a class="nav-item nav-link" href="#projects">Proyectos</a>
-                <a class="nav-item nav-link" href="#contact">Contacto</a>
-                </div>
+    <nav id="nav" class="navbar fixed-top ">
+        <a class="nav-item nav-link" href="#home">Logo</a>
+        <div class="d-flex justify-content-end">
+            <a class="nav-item nav-link" href="#about-skills">Acerca de mi</a>
+            <a class="nav-item nav-link" href="#projects">Proyectos</a>
+            <a class="nav-item nav-link" href="#contact">Contacto</a>
+        </div>
     </nav>
     <!-- main -->
     <main class="main">
@@ -61,9 +58,8 @@
         <!--about-skills section -->
         <section id="about-skills" class="container">
             <div class="row">
-                <div id="about-section"
-                    class="col-sm-6 d-flex flex-column align-items-center justify-content-center"
-                    data-aos="fade-down" data-aos-easing="linear">
+                <div id="about-section" class="col-sm-6 d-flex flex-column align-items-center justify-content-center"
+                    data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">
                     <h2 class="title-about">ACERCA</h2>
                     <h2 class="title-about">DE MI</h2>
                     <p class="about-text">
@@ -72,10 +68,21 @@
                         reiciendis ex eos consectetur totam a officiis, temporibus non! Similique iste distinctio velit
                         in.
                     </p>
+                    <!-- <a href="#" class="btn btn-outline-secondary btn-md mt-2 header-btn">Leer mas</a> -->
+                   
+                    <a href="../Chiñas_Santiago_Rebeca.pdf"  class="btn btn-cv" role="button" target="_blank"><span>CV</span></a>
+                    <!-- <a href="../Chiñas_Santiago_Rebeca.pdf" download="Chiñas_Santiago_Rebeca_CV" target="_blank"></a> -->
                 </div>
-                <div id="skills-section"
-                    class="col-sm-6 d-flex flex-column align-items-center justify-content-center">
-                    <h2 class="title-skills">Habilidades Técnicas</h2>
+                <div id="skills-section" class="col-sm-6 d-flex flex-column align-items-center justify-content-center"  data-aos="fade-up" data-aos-easing="linear" data-aos-duration="800">
+                    <h2 class="title-skills">Habilidades</h2>
+                    <!-- <h2 class="title-skills">Habilidades Técnicas</h2> -->
+                    <div class="soft-skills  d-flex flex-wrap justify-content-center">
+                            <p class="m-2">Planificación</p>
+                            <p class="m-2">Organización</p>
+                            <p class="m-2">Metodologías ágiles</p>
+                            <p class="m-2">Autodidacta</p>
+                            <p class="m-2">Resilencia</p>
+                    </div>
                     <div class="hard-skills d-flex flex-wrap justify-content-center align-items-center">
                         <!-- <div class="d-flex flex-wrap justify-content-center align-items-center"> -->
                         <div class="hard-skill-icon d-flex justify-content align-items-center flex-column">
@@ -140,16 +147,10 @@
                             <p>Firebase</p>
                         </div>
                     </div>
-                    <h2 class="title-skills">Habilidades blandas</h2>
+                    <!-- <h2 class="title-skills">Habilidades blandas</h2> -->
                     <!-- <div class="soft-skills w-100 d-flex justify-content-center align-items-center text-center"> -->
                     <!-- <div class="soft-skills d-flex justify-content-center align-items-center">  -->
-                    <div class="soft-skills  d-flex flex-wrap justify-content-center">
-                        <p class="m-2">Planificación</p>
-                        <p class="m-2">Organización</p>
-                        <p class="m-2">Metodologías ágiles</p>
-                        <p class="m-2">Autodidacta</p>
-                        <p class="m-2">Resilencia</p>
-                    </div>
+                   
                     <!-- </div> -->
                 </div>
             </div>
@@ -157,7 +158,8 @@
         <!-- project section -->
         <section id="projects" class="container d-flex align-items-center flex-column">
             <h2 class="title-projects">PROYECTOS</h2>
-            <div class="container card-project">
+
+            <div class="container card-project" data-aos="zoom-in" data-aos-duration="800">
                 <div class="row">
                     <div class="col-md-5" id="project-card-1">
                         <div class="transparent-card h-100 w-100">
@@ -167,8 +169,7 @@
                             </div>
                         </div>
                     </div>
-                    <div
-                        class="description-card col-md-7 p-4 d-flex flex-column justify-content-center align-items-center">
+                    <div class="description-card col-md-7 p-4 d-flex flex-column justify-content-center align-items-center">
                         <p class="description-project">
                             Desarrollo de una web app que consume información de una API y la muestra en la
                             página ,
@@ -186,7 +187,7 @@
                 </div>
             </div>
 
-            <div class="container card-project">
+            <div class="container card-project" data-aos="zoom-in" data-aos-duration="800">
                 <div class="row">
                     <div class="col-md-8" id="project-card-2">
                         <div class="transparent-card h-100 w-100">
@@ -211,7 +212,7 @@
                 </div>
             </div>
 
-            <div class="container card-project">
+            <div class="container card-project"  data-aos="zoom-in" data-aos-duration="800">
                 <div class="row">
                     <div class="col-md-7" id="project-card-3">
                         <div class="transparent-card h-100 w-100">
@@ -245,17 +246,24 @@
         <h2 class="title-contact text-center">CONTACTO</h2>
         <div class="d-flex flex-row justify-content-around">
             <div class="circle d-flex justify-content-center align-items-center">
-                <a href="https://www.linkedin.com/in/rebeca-c-santiago/" target="_blank"><i
-                        class="fab fa-linkedin-in icon"></i></a>
+                <a href="https://www.linkedin.com/in/rebeca-c-santiago/" target="_blank">
+                    <i class="fab fa-linkedin-in icon"></i>
+                </a>
             </div>
             <div class="circle d-flex justify-content-center align-items-center">
-                <a href="https://github.com/rebe-san" target="_blank"><i class="fab fa-github icon"></i></a>
+                <a href="https://github.com/rebe-san" target="_blank">
+                    <i class="fab fa-github icon"></i>
+                </a>
             </div>
             <div class="circle d-flex justify-content-center align-items-center">
-                <i class="fas fa-envelope"></i>
+                <a href="mailto:chi.san.rebeca@gmail.com" target="_blank">
+                    <i class="fas fa-envelope"></i>
+                </a>
             </div>
             <div class="circle d-flex justify-content-center align-items-center">
-                <i class="fas fa-phone"></i>
+                <a href="https://wa.me/529717187546" target="_blank">
+                    <i class="fas fa-phone"></i>
+                </a>
             </div>
         </div>
         <!-- <div class="d-flex flex-row justify-content-around">
@@ -267,6 +275,10 @@
     </footer>
     <!-- scripts bootstrap -->
     <script src="main.js"></script>
+    <script src="../node_modules/aos/dist/aos.js"></script>
+    <script>
+            AOS.init();
+            </script>            
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
