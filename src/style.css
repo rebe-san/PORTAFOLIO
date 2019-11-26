@@ -112,7 +112,7 @@
   max-width: 100vw;
   /* background: #0c0c0c; */
   background: #10100f;
-  padding-top: 54px;
+  padding-top: 59px;
   height: 100vh;
   /* background-image: linear-gradient(120deg, #d57eeb  0%, #FA8381 100%);    */
 }
@@ -124,8 +124,9 @@
 #about-section,
 #skills-section {
   padding: 0 25px 0 25px;
+
   /* border: solid red 1px; */
-  height: 100%;
+  /* height: 50%; */
 }
 
 .title-about {
@@ -134,7 +135,9 @@
   font-size: 60px;
   /* font-family: 'Catamaran', sans-serif; */
   /* color:#FFFAED; */
-  color: #bc6bc7;
+  /* color: #bc6bc7; */
+  color: #fa7971;
+
 
   /* color:#FA7971; */
   font-family: "Ubuntu", sans-serif;
@@ -147,7 +150,8 @@
 }
 
 .btn-cv {
-  background-image: linear-gradient(120deg, #d57eeb 0%, #fa8381 100%);
+  /* background-image: linear-gradient(120deg, #d57eeb 0%, #fa8381 100%); */
+  background-image: linear-gradient( 69.5deg,  rgba(189,73,255,0.99) 18.6%, rgba(254,76,227,1) 85.9% );
   columns: #0c0c0c;
   margin-top: 30px;
   width: 100px;
@@ -189,7 +193,7 @@
   /* color:#f3bcb4; */
   font-weight: bold;
   font-family: "Ubuntu", sans-serif;
-  font-size: 32px;
+  font-size: 30px;
   text-align: center;
 }
 
@@ -219,6 +223,11 @@
   margin: 20px;
 }
 
+
+.i-sk {
+  width: 40px;
+  height: 40px;
+}
 /********PROJECTS*********/
 
 #projects {
@@ -238,7 +247,7 @@
 
   /* color:#8155FF; */
   /* color:#a239ca; */
-  font-size: 70px;
+  font-size: 60px;
   /* color:#dcd0c0; */
   /* color:#F3F3EB; */
   /* color:#fa7268; */
@@ -266,7 +275,7 @@
   /* background:rgba(250,114,104,0.7); */
   /* background-size: 100% 100%; */
   /* background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 50%); */
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.4);
   /* border-radius:10px 0 0 10px; */
   /* padding: 2vh; */
   /* background-image: linear-gradient(120deg, #B75EC8 0%, #fa7268 100%, 0.8); */
@@ -299,6 +308,11 @@
 .description-card {
   /* background-image: linear-gradient(120deg, #B75EC8 0%, #fa7268 100%); */
   background: #f3f3eb;
+}
+
+.description-card a:hover{
+  color: #fa7971;
+
 }
 .description-project {
   font-family: "Montserrat", "sans-serif";
@@ -354,10 +368,6 @@
   font-size: 20px;
 }
 
-.i-sk {
-  width: 50px;
-  height: 50px;
-}
 
 /************** CONTACT************/
 #contact {
@@ -369,10 +379,10 @@
 
 .title-contact {
   font-family: "Ubuntu", sans-serif;
-  font-size: 4vh;
+  font-size: 40px;
   /* color:#F3F3EB; */
   color: #fa7268;
-  padding-top: 25px;
+  padding-top: 40px;
 }
 
 .circle {
@@ -491,6 +501,9 @@ ul li:nth-child(4) a:before {
 }
 
 /*****************************************MEDIA QUERIES*********************************/
+
+
+
 @media screen and (max-width: 576px) {
   /******** NAVBAR************/
   /* items navbar*/
@@ -521,30 +534,32 @@ ul li:nth-child(4) a:before {
   /**********ABOUT-SKILLS ************/
 
   #about-skills {
-    padding-top: 40px;
-    height: 250vh;
+    padding-top: 59px;
+    height: 200vh;
     /* border: solid 4px yellow; */
+    display: flex;
+    flex-wrap: wrap;
   }
 
-  #about-skills > div {
-    /* border:solid green 3px; */
-    height: 100%;
-  }
+  /* #about-skills > div {
+    border:solid green 3px;
+    height: 100vh;
+  } */
   #about-section {
     /* border: solid red 1px; */
-    height: 40%;
+    height: 50%;
   }
 
   #skills-section {
     /* border: solid red 1px; */
-    height: 60%;
+    height: 50%;
   }
 
   .title-about {
-    font-size: 50px;
+    font-size: 40px;
   }
   .about-text {
-    font-size: 17px;
+    font-size: 15px;
   }
 
   .title-skills {
@@ -579,18 +594,18 @@ ul li:nth-child(4) a:before {
   }
 
   .hard-skill-icon {
-    margin: 20px;
+    margin: 15px;
   }
 
   .i-sk {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
   }
 
   /********PROJECTS*********/
 
   .title-projects {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .card-project {
@@ -601,9 +616,9 @@ ul li:nth-child(4) a:before {
   .card-project > div {
     height: 90%;
   }
-  .transparent-card {
-    background: rgba(0, 0, 0, 0.6);
-  }
+  /* .transparent-card {
+    background: rgba(0, 0, 0, 0.4);
+  } */
   .transparent-card div {
     padding: 2vw;
   }
@@ -662,7 +677,7 @@ ul li:nth-child(4) a:before {
   /************** CONTACT************/
 
   .title-contact {
-    font-size: 40px;
+    font-size: 30px;
   }
 
   .circle {
@@ -672,5 +687,8 @@ ul li:nth-child(4) a:before {
   }
   .circle i {
     font-size: 20px;
+  }
+  #contact h5{
+    font-size: 15px;
   }
 }
