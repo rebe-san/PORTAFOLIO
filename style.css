@@ -1,22 +1,41 @@
+@font-face{
+  font-family: 'Roboto', sans-serif;
+  src: url(./fonts/Roboto-Light.ttf);
+}
+
+
+@font-face{
+  font-family: 'Ubuntu', sans-serif;
+  src: url(./fonts/Ubuntu-Medium.ttf);
+}
+
+
+
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body{
+  background-color: #0C0C0C;
+}
+
 /******** NAVBAR************/
-.navbar {
+ .navbar {
   background-image: linear-gradient(
     120deg,
     #501f58 0%,
     #f58a82 100%
   ); 
-}
+  /* background-color: #0C0C0C; */
+} 
 
 /* items navbar*/
 .nav-item {
-  color: black;
-  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
   font-weight: bold;
 }
 .logo {
@@ -32,17 +51,17 @@
   height: 100vh;
   padding-top: 65px;
   max-width: 100vw;
-  background: #0c0c0c;
 }
-
+ 
 .home-left {
   padding: 0 3vw 0 5vw;
-}
+} 
 
 #my-name {
   font-size: 80px;
   color: #fa7268;
-  font-family: "Staatliches", cursive;
+  font-family: "Ubuntu", sans-serif;
+
 }
 
 #my-lastname {
@@ -51,75 +70,52 @@
   font-family: "Ubuntu", sans-serif;
 }
 #my-position {
-  font-family: "Raleway", sans-serif;
   font-size: 20px;
   color: #b75ec8;
 }
-
-.rotating {
-  width: 60%;
-  height: 60%;
-  animation: rotation 8s infinite linear;
-  animation: rotation 8s infinite linear;
-  animation: rotation 8s infinite linear;
-  animation: rotation 8s infinite linear;
+.img-robot{
+  width: 380px;
+  animation: float 3s infinite;
 }
 
-@keyframes rotation {
-  from {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(359deg);
-    -moz-transform: rotate(359deg);
-    -ms-transform: rotate(359deg);
-    -o-transform: rotate(359deg);
-  }
-}
 
 /**********ABOUT-SKILLS ************/
 
-#about-skills {
+#about-skills{
   max-width: 100vw;
-  background: #10100f;
-  min-height: 100vh;
-  padding-top: 65px;
+    padding-top: 65px;
+    min-height: 100vh;
+    /* background: #0c0c0c; */
 }
 
-#about-section, #skills-section{
-  padding: 0 40px 0 40px;
-}
 
-.title-about {
-  font-weight: bold;
-  font-size: 50px;
-  color: #fa7971;
+#about-section{
+  padding: 40px 50px;
+} 
+ .title-about, .title-skills {
+  font-size: 30px;
+  color: #bc6bc7;
   font-family: "Ubuntu", sans-serif;
-  margin: 0 0 30px 0;
-}
+} 
 .about-text {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #dcd0c0;
-  font-size: 17px;
-  font-weight: bold;
+  font-size: 20px;
 }
-
+/* 
 .btn-cv {
   background-image: linear-gradient(
     69.5deg,
-    rgba(189, 73, 255, 0.99) 18.6%,
-    rgba(254, 76, 227, 1) 85.9%
+    #bd49fffc 18.6%,
+    #fe4ce3 85.9%
   );
   columns: #0c0c0c;
   margin-top: 30px;
   width: 100px;
   font-weight: bold;
-}
+} */
 
-.btn-cv span {
+/* .btn-cv span {
   cursor: pointer;
   display: inline-block;
   position: relative;
@@ -142,17 +138,16 @@
 .btn-cv:hover span:after {
   opacity: 1;
   right: 0;
+} */
+
+#skills-section{
+  padding: 20px 50px;
+  width: 100%;
 }
 
-.title-skills {
-  color: #bc6bc7;
-  font-weight: bold;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 30px;
-  text-align: center;
-  margin: 0 0 25px 0;
+.skills-list li{
+  list-style: none;
 }
-
 
 
 .soft-skills > p {
@@ -162,14 +157,39 @@
   margin: 20px;
 }
 
-.i-sk {
+.react-img{
   width: 40px;
-  height: 40px;
+}
+
+.github-img{
+  width: 40px;
+}
+
+
+.icon-skill{
+  width: 48px;
+  height:48px;
+}
+
+.icon-github{
+  color: #ffffff;
+}
+
+.icon-babel{
+  width: 48px;
+  margin: 14px 0;
+}
+.circle{
+  margin:30px
+}
+
+.circle p{
+  font-family: 'Roboto', sans-serif;
+  color: #dcd0c0;
 }
 /********PROJECTS*********/
 
 #projects {
-  background: #0c0c0c;
   max-width: 100vw;
   padding-top: 65px;
   min-height: 100vh;
@@ -177,13 +197,12 @@
 .title-projects {
   font-family: "Ubuntu", sans-serif;
   color: #fa7971;
-  font-size: 50px;
-  font-weight: bold;
+  font-size: 40px;
   margin:15px 0 0 0;
-}
+} 
 
 .card-project {
-  width: 80vw;
+  width: 85vw;
   height: 60vh;
   margin: 45px auto;
   border-radius: 0px;
@@ -200,12 +219,12 @@
 .name-project {
   position: relative;
   font-size: 5vw;
-  font-family: "Montserrat", "sans-serif";
   color: #fffaed;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 /*numeros del proyecto*/
 .number-project {
-  font-family: "Staatliches", cursive;
   text-align: right;
   font-size: 10vw;
   color: #fffaed;
@@ -215,13 +234,8 @@
   background: #f3f3eb;
 }
 
-.description-card a:hover {
-  color: #fa7971;
-}
 .description-project {
-  font-family: "Montserrat", "sans-serif";
-  padding: 10px auto;
-  text-align: justify;
+  font-family: 'Roboto', sans-serif;
 }
 
 .description-card div a {
@@ -229,20 +243,20 @@
   color: #bc6bc7;
   font-size: 20px;
   font-weight: bold;
-  font-family: "Montserrat", "sans-serif";
+  /* font-family: "Montserrat", sans-serif; */
 }
 #project-card-1 {
-  background-image: url("../imagenes/kamil-s-J1IbThTQJoY-unsplash.jpg");
+  background-image: url("./imagenes/jason-leung-poI7DelFiVA-unsplash.jpg");
   background-size: cover;
   padding: 0 0;
 }
 #project-card-2 {
-  background-image: url("../imagenes/mike-alonzo-Xe7za0JtTeM-unsplash.jpg");
+  background-image: url("./imagenes/mike-alonzo-Xe7za0JtTeM-unsplash.jpg");
   background-size: cover;
   padding: 0 0;
 }
 #project-card-3 {
-  background-image: url("../imagenes/filiberto-santillan-1HCb2gPk3ik-unsplash.jpg");
+  background-image: url("./imagenes/filiberto-santillan-1HCb2gPk3ik-unsplash.jpg");
   background-size: cover;
   padding: 0 0;
 }
@@ -253,19 +267,10 @@
   padding: 0 0;
 }
 
-#skills p {
-  color: #eeebd0;
-  font-weight: bold;
-  font-family: "Raleway", sans-serif;
-  font-size: 20px;
-}
-#skills ul li {
-  color: #eeebd0;
-  font-weight: bold;
-  font-family: "Raleway", sans-serif;
-  font-size: 20px;
-}
 
+.www-img{
+  width: 60px;
+}
 /************** CONTACT************/
 #contact {
   background: #10100f;
@@ -280,41 +285,28 @@
   padding-top: 40px;
 }
 
-.circle {
+.circle-about {
   width: 70px;
   height: 70px;
   background-image: linear-gradient(120deg, #d57eeb 0%, #fa8381 100%);
-
   border-radius: 50%;
   border: solid 2px white;
   margin: 30px;
+
 }
-.circle i {
+
+.circle-about i {
   color: black;
   font-size: 30px;
 }
+
+
+
 .made-by {
   font-size: 16px;
 }
 
 /*****************************************MEDIA QUERIES*********************************/
-
-@media screen and (min-width: 576px) and (max-width: 991px) {
-  #about-skills {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  #skills-section{
-    margin-top: 50px;
-  }
-  .title-about{
-    margin-top:15px;
-  }
-  
-
-  
-}
-
 @media screen and (max-width: 576px) {
   /******** NAVBAR************/
   /* items navbar*/
@@ -328,7 +320,7 @@
   }
 
   .home-left {
-    padding: 0 25px 0 25px;
+    padding: 0 30px ;
   }
 
   #my-name {
@@ -342,43 +334,33 @@
     font-size: 17px;
   }
 
+  .img-robot{
+    width: 250px;
+  }
   /**********ABOUT-SKILLS ************/
 
-  #about-skills {
-    padding-top: 65px;
-    height: 150vh;
-    display: flex;
-    flex-wrap: wrap;
+  #about-section, #skills-section {
+    padding: 10px 15px;
   }
 
-  #about-section {
-    height: 50%;
-  }
-
-  #skills-section {
-    height: 50%;
-  }
-
-  .title-about {
-    font-size: 40px;
-    margin: 20px 0 0 0;
-  }
-  .about-text {
-    font-size: 15px;
-  }
-
-  .title-skills {
-    font-size: 30px;
-  }
   
-  /********PROJECTS*********/
 
+
+  .about-text {
+    font-size: 16px;
+  }
+
+
+  /********PROJECTS*********/
+  #projects{
+    padding-top: 40px;
+  }
   .title-projects {
     font-size: 40px;
-    padding: 30px 0 0 0;
   }
   .card-project{
     height: auto;
+    margin: 30px 0px;
   }
 
 
@@ -415,14 +397,12 @@
 
   /************** CONTACT************/
 
-  .title-contact {
-    font-size: 30px;
-  }
 
-  .circle {
+  .circle-about {
     width: 60px;
     height: 60px;
     margin: 15px;
+  
   }
   .circle i {
     font-size: 20px;
@@ -430,4 +410,95 @@
   #made-by {
     font-size: 15px;
   }
+}
+
+
+@media screen and (min-width: 411px)and (max-width: 576px) {
+.nav-item{
+  font-size:13px;
+}
+}
+
+@media(max-width:414px){
+  .circle {
+    margin: 19px;
+}
+}
+
+
+@media(max-width:375px){
+  .circle {
+    margin:10px;
+}
+}
+
+@media(max-width:320px){
+  .circle {
+    margin:8px;
+}
+  .circle-about {
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+}
+
+.circle-about i {
+  font-size: 20px;
+}
+.nav-item {
+  font-size: 9px;
+}
+
+.img-robot{
+  width:200px;
+}
+.navbar {
+  padding: 10px 5px 5px 5px;
+}
+.nav-link {
+  padding: 0 10px;
+}
+.card-project {
+  width: 90vw;
+}
+
+
+.description-project {
+    font-size: 15px;
+}
+
+
+.made-by {
+  font-size: 15px;
+}
+}
+
+
+@media(max-width:274px){
+
+.nav-link {
+   padding: 0 10px;
+}
+.circle-about {
+  width: 40px;
+  height: 40px;
+}
+.made-by {
+  font-size: 13px;
+}
+.img-robot {
+  width: 150px;
+}
+}
+
+@keyframes float {
+	0% {
+		transform: translateY(0px) ;
+	}
+	50% {
+		transform: translateY(5px) ;
+	}
+	100% {
+		transform: translateY(0px) ;
+	}
 }

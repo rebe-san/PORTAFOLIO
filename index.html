@@ -5,20 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="icon" type="image/png" href="../imagenes/logo-rebe.png" />
+  <link rel="icon" type="image/png" href="./imagenes/logo-rebe.png" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <!-- fontawesome -->
+   <!-- fontawesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css"
     integrity="sha384-wxqG4glGB3nlqX0bi23nmgwCSjWIW13BdLUEYC4VIMehfbcro/ATkyDsF/AbIOVe" crossorigin="anonymous">
+     <!-- unicons -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.0.1/css/unicons.css">
   <!-- bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- estilos -->
   <link rel="stylesheet" type="text/css" href="style.css" />
-  <!-- fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Montserrat:600|PT+Sans|Raleway:300|Staatliches|Ubuntu&display=swap"
-    rel="stylesheet">
+  
   <title>Rebeca Chiñas</title>
 </head>
 
@@ -26,10 +25,10 @@
   <!-- navbar -->
   <nav id="nav" class="navbar fixed-top ">
     <a class="nav-item nav-link" href="#home">
-      <img class="img-fluid logo" src="../imagenes/rebelogo.svg" alt="logo">
+      <img class="img-fluid logo" src="./imagenes/home.svg" alt="logo">
     </a>
     <div class="d-flex justify-content-end">
-      <a class="nav-item nav-link" href="#about-skills">Acerca de mi</a>
+      <a class="nav-item nav-link" href="#about-skills">Acerca de mí</a>
       <a class="nav-item nav-link" href="#projects">Proyectos</a>
       <a class="nav-item nav-link" href="#contact">Contacto</a>
     </div>
@@ -40,72 +39,200 @@
     <section id="home" class="container">
       <div class="row h-100">
         <div class="col-md-6 d-flex flex-column justify-content-center align-items-left home-left">
-          <h1 id="my-name">REBECA
+          <h1 id="my-name">REBECA</h1>
             <h2 id="my-lastname">CHIÑAS SANTIAGO</h2>
             <h6 id="my-position">Desarrolladora Web | Ingeniera Electrónica</h6>
         </div>
         <div class="col-md-6 d-flex justify-content-center align-items-center">
-          <img class="img-fluid rotating" src="./imagenes/Página 1(6).svg" alt="">
+          <img class="img-fluid img-robot" src="./imagenes/robot.svg" alt="">
         </div>
       </div>
     </section>
     <!--about-skills section -->
-    <section id="about-skills" class="container">
-      <div class="row h-100">
-        <div id="about-section" class="col-lg-6 d-flex flex-column align-items-center justify-content-center"
-          data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">
-          <h2 class="title-about">¿Quién soy?</h2>
-          <p class="about-text text-justify">
-            En mí encontraras una persona analítica y observadora, con entusiasmo por el aprendizaje continuo, la mejora
-            personal y profesional. Front End Developer egresada del Bootcamp de Laboratoria e Ingeniera Electrónica por
-            la Universidad Autónoma Metropolitana. Me gusta compartir mi conocimiento adquirido por ello me he
-            desempeñado como Docente de Física y Matemáticas; En mis tiempos libres me gusta bailar y hacer
-            manualidades, disfruto de una buena comida con las personas que quiero y ver películas de terror.
+    <section id="about-skills" class="d-flex flex-column justify-content-center align-items-center">
+        <div id="about-section" class=" d-flex flex-column align-items-center justify-content-center"> 
+          <p class="title-about">Sobre mí</p>
+          <p class="about-text">
+            Mi curiosidad y la búsqueda del conocimiento, es lo que me impulsa siempre. Soy una persona autodidacta y disfruto muchísimo de aprender algo nuevo todos los días. Me gusta encontrar la mejor solución a un problema.
           </p>
+          <p class="about-text">
+            Egresada del Bootcamp de Laboratoria como Frontend Developer e Ingeniera Electrónica por la Universidad Autónoma Metropolitana. Actualmente me desempeño como Frontend Developer pero me encuentro en busqueda de una nueva oportunidad.
+          </p>
+          <!-- <div class="w-100 d-flex justify-content-center"> 
           <a href="./CV-Rebeca-Chiñas-Santiago.pdf" class="btn btn-cv" role="button" target="_blank"><span>CV</span></a>
-        </div>
+          </div> -->
+        <!-- </div> -->
+<!--        
         <div id="skills-section" class="col-lg-6 d-flex flex-column align-items-center justify-content-center"
-          data-aos="fade-up" data-aos-easing="linear" data-aos-duration="800">
-          <h2 class="title-skills">Habilidades</h2>
+          data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+          <p class="title-skills">Skills</p>
           <figure>
             <img class="img-fluid" src="./imagenes/Grupo(1).svg" alt="">
-          </figure>
+          </figure> -->
+        </div>
+        <div id="skills-section" class="d-flex flex-column justify-content-center align-items-center">
+          <!-- <img src="https://i.ibb.co/0VywMkW/paint-3.png" alt="" /> -->
+          <p class="title-skills">Habilidades</p>
+  
+          <div class="d-flex flex-row flex-wrap justify-content-center">
+            <div class="circle d-flex flex-column justify-content-center align-items-center">
+              <img src="./imagenes/js.svg" alt="">
+              <!-- <i class="fab fa-js i-sk"></i> -->
+              <p>Javascript</p>
+            </div>
+            <div class="circle d-flex flex-column  justify-content-center align-items-center">
+              <!-- <i class="fab fa-html5"></i> -->
+              <img src="./imagenes/html.svg" alt="">
+              <p>HTML</p>
+            </div>
+  
+            <div  class="circle d-flex flex-column justify-content-center align-items-center">
+              <!-- <i class="fab fa-css3-alt i-sk"></i> -->
+              <img src="./imagenes/css3.svg" alt="">
+              <p>CSS</p>
+            </div>
+            <div class="circle d-flex flex-column justify-content-center align-items-center">
+              <img class="icon-skill" src="./imagenes/react.svg"  alt="">
+              <p>Redux</p>
+            </div>
+
+            <div class="circle d-flex flex-column justify-content-center align-items-center">
+              <img class="icon-skill" src="./imagenes/redux.svg" alt="">
+              <p>React</p>
+            </div>
+            <div class="circle d-flex flex-column justify-content-center align-items-center">
+              <!-- <i class="fab fa-npm i-sk"></i> -->
+              <img class="icon-skill"  src="./imagenes/webpack.svg" alt="">
+              <p>Webpack</p>
+            </div>
+            <div class="circle d-flex flex-column justify-content-center align-items-center">
+              <!-- <i class="fab fa-npm i-sk"></i> -->
+              <img class="icon-babel"  src="./imagenes/babel.svg" alt="">
+              <p>Babel</p>
+            </div>
+  
+           
+            <div class="circle d-flex flex-column justify-content-center align-items-center ">
+              <!-- <i class="fab fa-git-alt i-sk"></i> -->
+              <img src="./imagenes/git.svg" alt="">
+              <p>Git</p>
+            </div>
+          
+  
+        
+  
+           
+          </div>
+          <div  class="d-flex flex-row flex-wrap justify-content-center">
+            <div class="circle d-flex flex-column justify-content-center align-items-center">
+              <!-- <i class="icon-github uil uil-github i-sk"></i> -->
+              <img class="icon-skill" src="./imagenes/github.png" alt="">
+              <p>Github</p>
+            </div>
+            <div class="circle d-flex flex-column justify-content-center align-items-center ">
+              <!-- <i class="fab fa-git-alt i-sk"></i> -->
+              <img class="icon-skill" src="./imagenes/bash.png" alt="">
+              <p>Bash</p>
+            </div>
+            <div class="circle d-flex flex-column justify-content-center align-items-center ">
+              <!-- <i class="fab fa-bootstrap i-sk"></i> -->
+                <img src="./imagenes/boostrap.svg" alt="">
+                <p>Bootstrap</p>
+            </div>
+            <div class="circle d-flex flex-column justify-content-center align-items-center ">
+              <!-- <i class="fab fa-git-alt i-sk"></i> -->
+              <img class="icon-skill" src="./imagenes/jira.svg" alt="">
+              <p>Jira</p>
+            </div>
+  
+            <div class="circle d-flex flex-column justify-content-center align-items-center ">
+              <!-- <i class="fab fa-ubuntu i-sk"></i> -->
+              <img src="./imagenes/ubuntu.png" alt="">
+              <p>Ubuntu</p>
+            </div>
+  
+            <!-- <div  class="circle d-flex flex-column justify-content-center align-items-center "> -->
+              <!-- <i class="fab fa-figma i-sk"></i> -->
+              <!-- <img  class="icon-skill" src="./imagenes/figma.svg" alt="">
+              <p>Figma</p>
+            </div> -->
+  
+            <div  class="circle d-flex flex-column justify-content-center align-items-center ">
+              <!-- <i class="fab fa-node i-sk"></i> -->
+              <img  class="icon-skill"  src="./imagenes/nodejs.svg" alt="">
+              <p>NodeJS</p>
+            </div>
+  
+            <div class="circle d-flex flex-column justify-content-center align-items-center">
+              <!-- <i class="fab fa-npm i-sk"></i> -->
+              <img src="./imagenes/npm.svg" alt="">
+              <p>npm</p>
+            </div>
+  
+  
+            <div class="circle d-flex flex-column justify-content-center align-items-center">
+              <img class="icon-skill" src="./imagenes/firebase.svg" alt="">
+              <p>Firebase</p>
+            </div>
+          </div>
         </div>
     </section>
+     
     <!-- project section -->
-    <section id="projects" class="container d-flex align-items-center flex-column">
-      <h2 class="title-projects">Algunos proyectos</h2>
-      
-      <div class="container card-project" data-aos="zoom-in" data-aos-duration="800">
+    <section id="projects" class="d-flex align-items-center flex-column">
+      <p class="title-projects">Proyectos</p>
+      <div class="container card-project" data-aos="zoom-in" data-aos-duration="1500">
         <div class="row h-100">
           <div class="col-md-7" id="project-card-1">
-            <div class="transparent-card h-100 w-100">
+            <div class=" h-100 w-100">
               <div class="d-flex justify-content-between">
-                <h2 class="name-project">Data-Lovers</h2>
-                <h2 class="number-project">01</h2>
+                <h2 class="name-project">Restaurant</h2>
+                <!-- <h2 class="number-project">01</h2> -->
               </div>
             </div>
           </div>
           <div class="description-card col-md-5 p-4 d-flex flex-column justify-content-center align-items-center">
             <p class="description-project">
-              Desarrollo de una web app que consume información de una API y la muestra en la
-              página , además de realizar funciones que manipulaban la información para mostrar los datos pedidos por
-              el usuario.
+              Maquetación de una pagina web para un restaurante, las tecnologías utlizadas para el desarrollo son HTML, CSS y Bootstrap.
             </p>
             <div class="d-flex justify-content-between w-100 pt-3">
-              <a href="https://github.com/rebe-san/MEX-Data-Lovers-008" target="blank">GITHUB</a>
-              <a href="https://rebe-san.github.io/MEX-Data-Lovers-008/src/index.html" target="blank">DEMO</a>
+              <a href="https://github.com/rebe-san/landing-restaurant" target="blank"><img src="./imagenes/github-purple.svg" class="www-img" alt="internet"></a>
+              <a href="https://rebe-san.github.io/landing-restaurant/index.html" target="blank"><img src="./imagenes/www.svg" class="www-img" alt="internet"></a>
             </div>
           </div>
         </div>
       </div>
-      <div class="container card-project" data-aos="zoom-in" data-aos-duration="800">
+
+      <div class="container card-project" data-aos="zoom-in" data-aos-duration="1500">
+        <div class="row h-100">
+          <div class="col-md-8" id="project-card-4">
+            <div class=" h-100 w-100">
+              <div class="d-flex justify-content-between">
+                <h2 class="name-project">MERN-Stack</h2>
+                <!-- <h2 class="number-project">04</h2> -->
+              </div>
+            </div>
+          </div>
+          <div class="description-card  col-md-4 p-4 d-flex flex-column justify-content-center align-items-center">
+            <p class="description-project">
+              Desarrollo de una aplicacion web que crea, muestra, edita y elimina libros de una biblioteca.
+              Se implemento como una API Restful, desarrollando el server-side con NodeJS, Express y MongoDB y el client-side con React, Axios y Bootstrap .
+              Para el deploy de la aplicación se utilizo Heroku.
+          </p>
+            <div class="d-flex justify-content-between w-100 pt-3">
+              <a href="https://github.com/rebe-san/MERN-Stack-Books" target="blank"><img src="./imagenes/github-purple.svg" class="www-img" alt="internet"></a>
+              <a href="https://mern-stack-books.herokuapp.com/" target="blank"><img src="./imagenes/www.svg" class="www-img" alt="internet"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container card-project" data-aos="zoom-in" data-aos-duration="1500">
         <div class="row h-100">
           <div class="col-md-8" id="project-card-2">
-            <div class="transparent-card h-100 w-100">
+            <div class=" h-100 w-100">
               <div class="d-flex justify-content-between">
                 <h2 class="name-project">MD-Links</h2>
-                <h2 class="number-project">02</h2>
+                <!-- <h2 class="number-project">02</h2> -->
               </div>
             </div>
           </div>
@@ -117,19 +244,19 @@
               reportarlos.
             </p>
             <div class="d-flex justify-content-between w-100 pt-3">
-              <a href="https://github.com/rebe-san/MEX008-FE-md-link" target="blank">GITHUB</a>
-              <a href="https://www.npmjs.com/package/md-link-rebeca" target="blank">PERFIL NPM</a>
+              <a href="https://github.com/rebe-san/MEX008-FE-md-link" target="blank"><img src="./imagenes/github-purple.svg" class="www-img" alt="internet"></a>
+              <a href="https://www.npmjs.com/package/md-link-rebeca" target="blank"><img src="./imagenes/www.svg" class="www-img" alt="internet"></a>
             </div>
           </div>
         </div>
       </div>
-      <div class="container card-project" data-aos="zoom-in" data-aos-duration="800">
+      <div class="container card-project" data-aos="zoom-in" data-aos-duration="1500">
         <div class="row h-100">
           <div class="col-md-7" id="project-card-3">
-            <div class="transparent-card h-100 w-100">
+            <div class=" h-100 w-100">
               <div class="d-flex justify-content-between">
                 <h2 class="name-project">Red-Social</h2>
-                <h2 class="number-project">03</h2>
+                <!-- <h2 class="number-project">03</h2> -->
               </div>
             </div>
           </div>
@@ -140,57 +267,36 @@
               publicaciones y comentarios.
             </p>
             <div class="d-flex justify-content-between w-100 pt-3">
-              <a href="https://github.com/rebe-san/MEX008-social-network" target="blank">GITHUB</a>
-              <a href="https://red-social-270ac.firebaseapp.com/" target="blank">DEMO</a>
+              <a href="https://github.com/rebe-san/MEX008-social-network" target="blank"><img src="./imagenes/github-purple.svg" class="www-img" alt="internet"></a>
+              <a href="https://red-social-270ac.firebaseapp.com/" target="blank"><img src="./imagenes/www.svg" class="www-img" alt="internet"></a>
             </div>
           </div>
         </div>
       </div>
-      <div class="container card-project" data-aos="zoom-in" data-aos-duration="800">
-        <div class="row h-100">
-          <div class="col-md-8" id="project-card-4">
-            <div class="transparent-card h-100 w-100">
-              <div class="d-flex justify-content-between">
-                <h2 class="name-project">MERN-Stack</h2>
-                <h2 class="number-project">04</h2>
-              </div>
-            </div>
-          </div>
-          <div class="description-card  col-md-4 p-4 d-flex flex-column justify-content-center align-items-center">
-            <p class="description-project">
-              Desarrollo de un MERN-Stack que añade , edita y elimina libros de una biblioteca.
-              Se implemento como una API Restful haciendo lamadas con axios y utilizando MongoDB como base de
-              datos,deployada en heroku. </p>
-            <div class="d-flex justify-content-between w-100 pt-3">
-              <a href="https://github.com/rebe-san/MERN-Stack-Books" target="blank">GITHUB</a>
-              <a href="https://mern-stack-books.herokuapp.com/" target="blank">DEMO</a>
-            </div>
-          </div>
-        </div>
-      </div>
+     
     </section>
   </main>
   <!-- footer -->
   <footer id="contact">
-    <h2 class="title-contact text-center">Contacto</h2>
+    <p class="title-contact text-center">Contacto</p>
     <div class="d-flex flex-row justify-content-around">
-      <div class="circle d-flex justify-content-center align-items-center">
-        <a href="https://www.linkedin.com/in/rebeca-c-santiago/" target="_blank">
+      <div class="circle-about d-flex justify-content-center align-items-center">
+        <a class="d-flex justify-content-center align-items-center" href="https://www.linkedin.com/in/rebeca-c-santiago/" target="_blank">
           <i class="fab fa-linkedin-in icon"></i>
         </a>
       </div>
-      <div class="circle d-flex justify-content-center align-items-center">
-        <a href="https://github.com/rebe-san" target="_blank">
+      <div class="circle-about d-flex justify-content-center align-items-center">
+        <a class="d-flex justify-content-center align-items-center" href="https://github.com/rebe-san" target="_blank">
           <i class="fab fa-github icon"></i>
         </a>
       </div>
-      <div class="circle d-flex justify-content-center align-items-center">
-        <a href="mailto:chi.san.rebeca@gmail.com" target="_blank">
+      <div class="circle-about d-flex justify-content-center align-items-center">
+        <a class="d-flex justify-content-center align-items-center" href="mailto:chi.san.rebeca@gmail.com" target="_blank">
           <i class="fas fa-envelope"></i>
         </a>
       </div>
-      <div class="circle d-flex justify-content-center align-items-center">
-        <a href="https://wa.me/529717187647" target="_blank">
+      <div class="circle-about d-flex justify-content-center align-items-center">
+        <a class="d-flex justify-content-center align-items-center" href="https://wa.me/529717187647" target="_blank">
           <i class="fas fa-phone"></i>
         </a>
       </div>
